@@ -22,9 +22,9 @@ const browserType = "firefox";
 const browser = await playwright[browserType].launch({ headless: true });
 const context = await browser.newContext();
 const page = await context.newPage();
-page.on("console", (msg) => {
-  console.log(msg.text());
-});
+// page.on("console", (msg) => {
+//   console.log(msg.text());
+// });
 console.log("0");
 
 // ======== LOGIN ========
